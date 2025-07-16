@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('nama_akun');
             $table->string('email')->nullable();
-            $table->string('password_hash');
+            $table->string('password_hash')->nullable();
             $table->text('catatan')->nullable();
             $table->timestamps();
         });
